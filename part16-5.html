@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: cursive;
+        }
+        body{
+            margin: 30px;
+        }
+        section{
+            border: 5px double black;
+            padding: 20px;
+            margin: auto;
+            width: 700px;
+            box-shadow: 0px 0px 30px rgb(122, 92, 245);
+            text-align: center;
+            border-radius: 20px;
+        }
+        section:hover{
+            transition: 1s;
+            transform: scale(1.1);
+        }
+        /* section::after{
+                 border-radius: 50px;
+        }
+        section::before{
+            border-radius: 30px;
+        } */
+        progress{
+            width: 500px;
+            height: 40px;
+            accent-color: #3A6D8C;
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section p{
+            color: #8c3a3a;
+            font-weight: 700;
+        }
+        section input{
+            line-height: 20px
+        }
+        section div{
+            line-height: 50px;
+            color: #FF6600;
+            font-weight: 700;
+            text-align: center;
+        }
+        h1{
+            color: #0B2F9F;
+            font-size: 30px;
+            filter: drop-shadow(2px 2px 3px #161D6F);
+        }
+        section div input{
+            border: 1px solid rgb(10, 14, 247);
+            border-radius: 20px;
+            padding: 5px;
+            margin: 10px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+        section div input:hover{
+            border: 1px solid red;
+            transition: 1s;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px green;
+        }
+        /* button::before{
+             animation: reverse 2s infinite linear;
+             filter: blur(20px);
+        }
+        button.button{
+            position: relative;
+            display: flex;
+            width: 100%;
+            z-index: 1;
+            transition: all 0.18s ease;
+            backdrop-filter: blur(40px);
+            backface-visibility: hidden;
+        } */
+
+    </style>
+</head>
+<body>
+      <section>
+                <center> 
+                    <h1> MY Skills</h1>
+                    
+                </center>
+                <p> HTML <progress min="0" value="90" max="100"> </progress>  100/90 </p>
+                <p> CSS <progress min="0" value="80" max="100"></progress> 100/80</p>
+                <p> java <progress min="0" value="10" max="100"></progress>100/10  </p>
+      </section>
+        <br><br><br><br><br>
+
+            <section>
+                    <h1> Frontend Course </h1>
+
+                <progress min="0" max="100" value="0" id="pr1"></progress>
+            </section>
+
+      <br><br><br><br><br>
+
+    <section>
+
+                <title>All Input Types Example</title>
+
+                <center>
+                    <h1>Form with All Input Types</h1>
+                </center>
+
+     <form>
+ 
+    <div class="form-group">
+        <label for="text-input">Text Input:</label>
+        <input type="text" id="text-input" placeholder="Enter some text" required>
+    </div> <hr>
+
+    <div class="form-group">
+        <label for="password-input">Password Input:</label>
+        <input type="password" id="password-input" placeholder="Enter password" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="email-input">Email Input:</label>
+        <input type="email" id="email-input" placeholder="Enter your email" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="url-input">URL Input:</label>
+        <input type="url" id="url-input" placeholder="Enter URL" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="number-input">Number Input:</label>
+        <input type="number" id="number-input" placeholder="Enter a number" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="tel-input">Telephone Input:</label>
+        <input type="tel" id="tel-input" placeholder="Enter your phone number" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="search-input">Search Input:</label>
+        <input type="search" id="search-input" placeholder="Search..." required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="date-input">Date Input:</label>
+        <input type="date" id="date-input" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="time-input">Time Input:</label>
+        <input type="time" id="time-input" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="time-input">Date-Time Input:</label>
+        <input type="datetime-local" id="time-input" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="file-input">File Input:</label>
+        <input type="file" id="file-input" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="branch">Course</label><br>
+        <input type="radio" id="branch" name="branch" required autocomplete="on">Data Scinece  <br>
+        <input type="radio" id="branch" name="branch" required autocomplete="on"> Frontend <br>
+    </div><hr>
+    <br>
+    <div class="form-group">
+        <label>Checkboxes:</label>
+        <input type="checkbox" id="check1" name="checkbox-group" value="1" >Option1
+        <input type="checkbox" id="check2" name="checkbox-group" value="2">Option2
+    </div><hr>
+
+    <div class="form-group">
+        <label for="textarea-input">Textarea:</label>
+        <textarea id="textarea-input" rows="4" placeholder="Enter some text" required ></textarea>
+    </div>
+
+    <input type="hidden" id="hidden-input" value="some-hidden-value" required>
+
+    <div class="form-group"><hr>
+        <label for="color-input">Color Input:</label>
+        <input type="color" id="color-input" value="#ff0000" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="month-input">Month Input:</label>
+        <input type="month" id="month-input" value="2024-10" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="range-input">Range Input :</label>
+        <input type="range" id="range-input" min="0" max="100" value="50" required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="week-input">Week Input:</label>
+        <input type="week" id="week-input"  required>
+    </div><hr>
+
+    <div class="form-group">
+        <label for="image-input">Image Input (Click image to submit):</label>
+        <input type="image" id="image-input" src="../Image/image.jpeg" alt="Submit Button" required>
+        </div><hr>
+
+        <div class="form-group">
+            <input type="reset" value="Reset Form">
+        </div><hr>
+        <br>
+        <button type="submit">Submit</button>
+        </form>
+
+                
+            </section>
+
+            <br><br><br><br><br><br>
+            <button> Button </button>
+
+    <script>
+        let progressTag = document.getElementById('pr1');
+        function download(){
+            progressTag.value++;
+        }
+        setInterval('download()',  500);  
+    </script>
+</body>
+</html>

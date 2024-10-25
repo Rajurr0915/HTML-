@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{
+                font-family: cursive;
+                font-size: 1rem;
+            }
+            .Username{
+                display: flex;
+            }
+            section{
+                background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201101/pngtree-scene-with-geometrical-forms-the-poster-model-minimal-background-render-image_452981.jpg);
+                background-size: cover;
+                min-height: 95vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0px;
+                box-shadow: 0px 0px 10px black;
+            }
+            form{
+                margin: 20px;
+                padding: 20px;
+                border: 1px solid rgb(2, 171, 233);
+                border-radius: 50px;
+                box-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+            }
+            form input{
+                padding: 10px;
+                margin-bottom: 15px;
+                margin-top: 8px;
+                border: none;
+                outline: none;
+                border: 1px solid rgba(9, 134, 156, 0.603);
+                border-radius: 4px;
+                margin: 10px;
+                background-color: rgba(78, 221, 253, 0.614);
+                box-shadow: 0px 0px 10px rgb(0, 0, 0);
+                outline: none;
+                color: rgb(0, 34, 252);
+                
+            }
+            form input:hover{
+                transition: 1s;
+                transform: scale(1.1);
+            }
+            label{
+                color: rgb(255, 255, 255);
+                filter: drop-shadow(1px 1px 2px rgb(0, 162, 255));
+            }
+            h1{
+                color: aliceblue;
+                font-size: 1.5rem;
+                filter: drop-shadow(1px 1px 2px rgb(0, 26, 255));
+            }
+            h2{
+                color: aliceblue;
+
+            }
+            button{
+                border: none;
+                border: 1px solid rgb(255, 255, 255);
+                background-color: rgba(73, 73, 255, 0.167);
+                min-width: 100px;
+                margin: 20px;
+                padding: 10px;
+                border-radius: 50px;
+                color: aliceblue;
+                filter: drop-shadow(2px 2px 2px rgb(0, 17, 255));
+            }
+        </style>
+    </head>
+    <body>
+
+        <section>
+            <form autocomplete="off">
+               <h1>Registration </h1>
+               <div class="Username">
+                    <div>
+                        <label for="Name">Full-Name</label> <br>
+                        <input type="text" id="Name" placeholder="Enter Your Name" name="name" required>
+                    </div> 
+                    <div>
+                        <label for="Username">Username</label>  <br>
+                        <input type="text" id="Username" placeholder="Enter Your Username" name="Username" required>
+                    </div>
+               </div>
+
+
+               <div class="Username">
+                    <div>
+                        <label for="email">Email</label> <br>
+                        <input type="email" id="email" placeholder="Enter Your email" name="email" required>
+                    </div> 
+                    <div>
+                        <label for="number">Phone number</label>  <br>
+                        <input type="number" id="number" placeholder="Enter Your number" name="number" required>
+                    </div>
+              </div>
+
+
+              <div class="Username">
+                    <div>
+                        <label for="password">password</label> <br>
+                        <input type="password" id="password" placeholder="Enter Your password" name="password" required>
+                    </div> 
+                    <div>
+                        <label for="password"> Comfirm password</label>  <br>
+                        <input type="text" id="password" placeholder="Enter Your password" name="password" required>
+                    </div>
+              </div>
+
+              <h2>Gender</h2>
+
+                    <div class="Username">
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Male </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">feMale </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox">Prefer not to say </label>
+                        </div>
+                    </div>
+
+                    <button>Register</button>
+
+
+
+            </form>
+        </section>
+    </body>
+</html>

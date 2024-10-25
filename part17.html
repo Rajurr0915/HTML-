@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+        *::selection{
+            background-color: black;
+            color: #fff;
+        }
+        body{
+            background-color: #EEEEEE;
+        }
+        #nav{
+            display: flex;
+            gap: 50px;
+            padding: 0px 90px;
+        }
+        #header{
+            /* position: fixed; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #134B70;
+            /* position: relative; */
+            
+        }
+        #header p{
+            padding: 0px 40px;
+        }
+        #nav li a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3rem;
+        }
+        #nav li a:hover{
+            color: yellow;
+            text-decoration: underline;
+        }
+        #main-content{
+            border: 1px solid rgb(255, 255, 255);
+            padding: 30px;
+        }
+        #main-content h1{
+                  color: #2c2a58;
+                  padding: 0px 50px;
+                  margin-top: 20px;
+        }
+        #main-content p{
+            color: #508C9B;
+            width: 70%;
+            text-align: justify;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #main{
+            display: flex;
+            gap: 30px;
+            padding: 0px 100px;
+            
+        }
+        .article{
+            text-align: justify;
+            flex: 1;
+            border: 5px double #45427f;
+            padding: 20px;
+            background-color: #EEEEEE;
+            border-radius: 10px;
+
+        }
+        .article h1{
+            color: #201E43;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .article p{
+            color: #508C9B;
+        }
+        #section{
+              color: #134B70;
+              border: 1px double rgb(172, 174, 193);
+              padding: 30px;
+              margin-top: 50px;
+              background-color: #c0d1d699;
+        }
+        #footer{
+            padding: 30px;
+            text-align: center;
+            color: #EEEEEE;
+            background-color: #201E43;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin: auto;
+            /* justify-content: space-between; */
+
+        }
+        .social-media{
+            margin: auto;
+        }
+        .foot{
+            text-align: center;
+            padding: 10px;
+            background-color: black;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        #manu-icon{
+            padding: 0px 20px;
+        }
+        details{
+            background-color: #33314f;
+            padding: 20px;
+            margin: auto;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            width: 60%;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+        }
+        /* datalist:hover{
+           border-radius: 100px 0px 0px 100px;
+           background-color: #201E43;
+           color: aquamarine;
+        } */
+         .details{}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <p><img src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png" alt="" width="100"></p>
+
+        <ul id="nav" type="none">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+        <div class="bx-bx-menu">
+              <div id="manu-icon">
+                <img src="https://www.pinclipart.com/picdir/big/532-5328945_menu-bar-icon-white-clipart-png-download-menu.png" alt="" width="30">
+              </div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <h1>Welcome to Our Website</h1>
+        <p>This is where the main content of the website goes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptas consequatur vitae praesentium incidunt amet beatae minima inventore officia quasi ratione consectetur, alias deleniti voluptatum. Autem esse magni consectetur rerum!
+        Unde quae quisquam, tempore culpa vitae veritatis officia! Blanditiis, temporibus nisi fugiat incidunt unde labore repellat itaque dignissimos, nesciunt similique deserunt ea. Possimus tempore labore, ipsum dolores doloremque sapiente ab.</p>
+    </div>
+
+                <div id="main">
+                    <div class="article">
+                        <img src="https://media.nature.com/w1248/magazine-assets/d41586-024-03061-6/d41586-024-03061-6_27700196.jpg?as=webp" alt="" width="200">
+                        <h1> How I created a film festival to  explore climate communication </h1>
+                        <p>I wound up on stage as part of a US National Science Foundation grant that I was awarded in January. The grant funds three studies, and each includes a public-engagement component. For one of the studies, I wanted to explore how multimedia stories can influence climate action, and I needed to collect films to show to the test groups. So I worked with film-maker and lecturer Sarah Lasley at California State Polytechnic University, Humboldt (Cal Poly Humboldt) in Arcata to run a film festival, with specific categories tailored to the messages we needed for the study.</p>
+                    </div>
+
+                    <div class="article">
+                        <img src="https://media.springernature.com/w580h326/nature-cms/uploads/collections/hero_flipped-66f94ee54558e4e3c9e973ef0d84b824_right-16f88d6209a33089b1e31d68221df43b.jpg" alt="" width="210">
+                        <h1>Science careers and mental health </h1>
+                        <p>Science’s hyper-competitive environment with its ‘publish or perish’ culture and a lack of job security can often trigger workplace anxiety and depression among early career researchers. Nature's annual careers surveys repeatedly point to mental health problems faced by graduate students and postdoctoral researchers. This online resource provides peer-to-peer advice and strategies to improve mental wellbeing.</p>
+                    </div>
+            </div> <br><br><br><br><br>
+
+            <div class="details">
+                <details>
+                    <summary>1. Twitter</summary>
+                    <p>Twitter’s FAQ help center made a list as it factored in some fascinating personalization, easy-to-use search functionality, and has a positive user experience (something few FAQ pages ever achieve).</p>
+                  </details>
+            
+                  <details>
+                    <summary>2. YouTube</summary>
+                    <p>YouTube’s FAQ page is clean, fresh, simple to use, and provides access to the most commonly asked “help” topics.</p>
+                    <p>As you might expect, content delivery combines video/visual content with standard textual content. The role of mixed content types in FAQ pages is something often overlooked.</p>
+                  </details>
+            
+                   <details>
+                    <summary>3. McDonald’s</summary>
+                    <p>The McDonald’s FAQ page feels informal and sociable, encouraging people to share their FAQ experiences (a rarity).</p>
+                    <p></p>
+                   </details>
+            
+                   <details>
+                    <summary>4. WhatsApp</summary>
+                    <p>The FAQ resource for Whatsapp is bright, easy to use, and categorized effectively for quick desktop or mobile use.</p>
+                    <p>When considering the functional role and practical requirements of an FAQ resource, it can be easy to forget the importance of loading time and speed of access to information. </p>
+                   </details>
+            </div> <br><br><br><br><br>
+        
+
+    <div id="section">
+        <h2>About Us</h2>
+        <p><marquee behavior="" direction="" scrollamount="10">Briefly introduce the company. When was it founded, and by whom? What does the company specialize in? Mention the key industry or sector the company operates in.</marquee></p>
+    </div>
+
+      <div id="footer">
+           <div class="social-media">
+            <img src="https://www.freepnglogos.com/uploads/instagram-logo-png/white-instagram-logo-black-and-white-icon--14.png" alt="" width="30">
+           </div>
+
+           <div class="social-media">
+            <img src="https://www.pngall.com/wp-content/uploads/13/Facebook-White-Logo.png" alt="" width="30">
+           </div>  
+           <div class="social-media">
+            <img src="https://www.pngkit.com/png/full/434-4340629_logo-whatsapp-branco-png-icone-whatsapp-png-branco.png" alt="" width="30">
+           </div>
+           <div class="social-media">
+            <img src="https://clipground.com/images/white-twitter-logo-png-1.png" alt="" width="50">
+           </div>
+      </div>
+
+      <div class="foot">
+        <p>
+            Copyright &copy;2024; Designed by RAJU M
+        </p>
+      </div>
+
+              
+</body>
+</html>
